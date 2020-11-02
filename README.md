@@ -1,9 +1,9 @@
 # Budiž M@il
 > Jednoduché odeslání e-mailu s ručním nastavením parametrů
 
-Binární soubor pro [Windows (.NET Core 3.1 | WPF)](//github.com/ma-ta/budiz-mail/BudizMail.exe)
+Binární soubor pro [Windows](https://github.com/ma-ta/budiz-mail/blob/main/BudizMail.exe)
 
-![Screenshot aplikace Budiž M@il v0.2.0](//github.com/ma-ta/budiz-mail/budiz-mail.png)
+![Screenshot aplikace Budiž M@il v0.2.0](https://github.com/ma-ta/budiz-mail/blob/main/budiz-mail.png)
 
 Použité technologie:
 
