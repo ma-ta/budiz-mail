@@ -18,21 +18,21 @@
         <DockPanel Grid.Row="0">
             <Menu Height="22" Background="#FF1E2023" VerticalAlignment="Center">
                 <MenuItem Header="_Soubor" Foreground="#FFF2FFFF" MinHeight="22">
-                    <MenuItem Foreground="Black" Header="_Načíst ze souboru" Click="NacistTxt_Click" ToolTip="Načte text ze souboru .txt (UTF-8)" Background="{x:Null}">
+                    <MenuItem Foreground="Black" Header="_Načíst ze souboru" Click="NacistTxt_Click" ToolTip="Vloží text ze souboru .txt (UTF-8)" Background="{x:Null}">
                         <MenuItem.Icon>
                             <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE70F;" TextAlignment="Center" />
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="_Konec" Foreground="Black" Click="Konec" ToolTip="Ukončí aplikaci" Background="{x:Null}">
+                    <MenuItem Header="_Ukončit" Foreground="Black" Click="Konec" ToolTip="Ukončí aplikaci" Background="{x:Null}">
                         <MenuItem.Icon>
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8BB;" TextAlignment="Center" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE7E8;" TextAlignment="Center" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
                 <MenuItem Header="_Nápověda" Foreground="#FFF2FFFF">
                     <MenuItem Foreground="Black" Header="_O aplikaci" Click="OAplikaci">
                         <MenuItem.Icon>
-                            <Image Source="icon.ico" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE82F;" TextAlignment="Center" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>

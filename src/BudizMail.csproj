@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
     <Authors>© 2020 Martin TÁBOR</Authors>
     <Product>Budiž Mail</Product>
     <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
@@ -13,8 +13,9 @@
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ma-ta/budiz-mail</PackageProjectUrl>
     <PackageIcon>icon_256px.png</PackageIcon>
-    <PackageReleaseNotes>2020-11-02
-.NET Core 3.1 (WPF)</PackageReleaseNotes>
+    <PackageReleaseNotes>2020-11-10
+.NET 5.0
+VS Community 16.8.0</PackageReleaseNotes>
     <NeutralLanguage>cs-CZ</NeutralLanguage>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>

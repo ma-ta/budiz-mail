@@ -3,9 +3,9 @@
 
 **Použité technologie:**
 
-- .NET Core 3.1,
+- .NET 5,
 - WPF,
-- VS Community 2019 v16.7.7
+- VS Community 2019 v16.8
 
 **Stažení:**
 
@@ -13,4 +13,4 @@
 
 **Screenshot:**:
 
-![Screenshot aplikace Budiž M@il v0.2.0](/budiz-mail.png)
+![Screenshot aplikace Budiž M@il v0.2.1](/budiz-mail.png)
