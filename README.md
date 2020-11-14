@@ -9,7 +9,7 @@
 
 **Stažení:**
 
-> - Binární soubor pro [Windows, .NET 5.0](/BudizMail.exe)
+> - Binární soubor pro [Windows 10 (.NET 5.0)](/BudizMail.exe)
 > - [.NET Runtime](//dotnet.microsoft.com/download/dotnet/current/runtime)
 
 **Screenshot:**:
