@@ -5,36 +5,38 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
-    <Version>0.2.1</Version>
+    <Version>0.2.2</Version>
     <Authors>© 2020 Martin TÁBOR</Authors>
     <Product>Budiž Mail</Product>
     <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
     <Copyright>© 2020 Martin TÁBOR</Copyright>
-    <PackageLicenseExpression></PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/ma-ta/budiz-mail</PackageProjectUrl>
+    <PackageLicenseExpression>CC BY-SA 4.0</PackageLicenseExpression>
+    <PackageProjectUrl>//github.com/ma-ta/budiz-mail</PackageProjectUrl>
     <PackageIcon>icon_256px.png</PackageIcon>
-    <PackageReleaseNotes>2020-11-10
+    <PackageReleaseNotes>2020-11-14
 .NET 5.0
-VS Community 16.8.0</PackageReleaseNotes>
+VS Community 16.8.1</PackageReleaseNotes>
     <NeutralLanguage>cs-CZ</NeutralLanguage>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseFile></PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="creative_commons_32px.png" />
+    <None Remove="github_32px.png" />
     <None Remove="icon_128px.png" />
+    <None Remove="zdroje\LICENSE.txt" />
+    <None Remove="zdroje\LICENSE.txt" />
     <None Include="zdroje\icon_256px.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="zdroje\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="creative_commons_32px.png" />
+    <Resource Include="github_32px.png" />
     <Resource Include="icon_128px.png" />
   </ItemGroup>
 

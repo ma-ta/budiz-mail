@@ -5,12 +5,13 @@
 
 - .NET 5.0,
 - WPF,
-- VS Community 2019 v16.8.0
+- VS Community 2019 v16.8.1
 
 **Stažení:**
 
-> - Binární soubor pro [Windows](/BudizMail.exe)
+> - Binární soubor pro [Windows, .NET 5.0](/BudizMail.exe)
+> - [.NET Runtime](//dotnet.microsoft.com/download/dotnet/current/runtime)
 
 **Screenshot:**:
 
-![Screenshot aplikace Budiž M@il v0.2](/budiz-mail.png)
+![Screenshot aplikace Budiž M@il v0.2.2](/budiz-mail.png)

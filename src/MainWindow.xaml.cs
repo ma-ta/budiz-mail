@@ -15,8 +15,8 @@ namespace BudizMail
         public MainWindow()
         {
             InitializeComponent();
-            
-            
+
+            this.Title = App.NAZEV;
             // po spuštění umístí kurzor do políčka SMTP Server
             tboxSmtpServer.Focus();
         }
@@ -24,7 +24,7 @@ namespace BudizMail
 
         // konstanty, proměnné, třídy
         SolidColorBrush barvaZelena = new SolidColorBrush(Color.FromArgb(0xFF, 0x5E, 0xBF, 0x64));
-        SolidColorBrush barvaCervena = new SolidColorBrush(Color.FromArgb(0xFF, 0xBF, 0x5E, 0x5E));
+        SolidColorBrush barvaCervena = new SolidColorBrush(Color.FromArgb(0xFF, 0xE4, 0x4A, 0x4A));
         SolidColorBrush barvaModra = new SolidColorBrush(Color.FromArgb(0xFF, 0x5E, 0x95, 0xBF));
 
         OdeslatMail odeslatMail = new OdeslatMail();
@@ -137,9 +137,10 @@ namespace BudizMail
         }
 
         private void OAplikaci(object sender, RoutedEventArgs e)
-        {
+        {            
             OAplikaciWindow oAplikaci = new OAplikaciWindow();
-            oAplikaci.Show();
+            oAplikaci.Owner = Application.Current.MainWindow;
+            oAplikaci.ShowDialog();
         }
 
         private void NacistTxt_Click(object sender, RoutedEventArgs e)

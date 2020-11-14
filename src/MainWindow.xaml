@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BudizMail"
         mc:Ignorable="d"
-        Title="Budiž Mail" Height="650" Width="750" WindowStartupLocation="CenterScreen"
+        Title="" Height="650" Width="750" WindowStartupLocation="CenterScreen"
         MinWidth="400" MinHeight="525" ResizeMode="CanResizeWithGrip"
         BorderThickness="0" Background="#FF35393D">
 
@@ -16,23 +16,23 @@
         </Grid.RowDefinitions>
 
         <DockPanel Grid.Row="0">
-            <Menu Height="22" Background="#FF1E2023" VerticalAlignment="Center">
+            <Menu Height="22" Background="#FF1E2023" IsMainMenu="True">
                 <MenuItem Header="_Soubor" Foreground="#FFF2FFFF" MinHeight="22">
-                    <MenuItem Foreground="Black" Header="_Načíst ze souboru" Click="NacistTxt_Click" ToolTip="Vloží text ze souboru .txt (UTF-8)" Background="{x:Null}">
+                    <MenuItem Foreground="Black" Header="_Vložit ze souboru" Click="NacistTxt_Click" ToolTip="Načte text ze souboru .txt (UTF-8)" Background="{x:Null}">
                         <MenuItem.Icon>
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE70F;" TextAlignment="Center" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE70F;" HorizontalAlignment="Right" VerticalAlignment="Center" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem Header="_Ukončit" Foreground="Black" Click="Konec" ToolTip="Ukončí aplikaci" Background="{x:Null}">
                         <MenuItem.Icon>
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE7E8;" TextAlignment="Center" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE7E8;" HorizontalAlignment="Right" VerticalAlignment="Center" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
                 <MenuItem Header="_Nápověda" Foreground="#FFF2FFFF">
-                    <MenuItem Foreground="Black" Header="_O aplikaci" Click="OAplikaci">
+                    <MenuItem x:Name="MenuItem_OAplikaci" Foreground="Black" Header="_O aplikaci" Click="OAplikaci" IsEnabled="True">
                         <MenuItem.Icon>
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE82F;" TextAlignment="Center" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE82F;" HorizontalAlignment="Right" VerticalAlignment="Center" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
@@ -76,11 +76,11 @@
             <TextBox x:Name="tboxOd" Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="6" Text="@" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
             <TextBox x:Name="tboxKomu" Grid.Column="1" Grid.Row="6" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="7" Text="@" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
             <TextBox x:Name="tboxPredmet" Grid.Column="1" Grid.Row="7" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="8" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
-            <TextBox x:Name="tboxTextMailu" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Margin="10,3,0,3" Padding="2,5,4,5" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" SpellCheck.IsEnabled="True" AcceptsReturn="True" TabIndex="9" UndoLimit="1000" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" AcceptsTab="True" FontSize="12" BorderThickness="0" TextAlignment="Justify"/>
+            <TextBox x:Name="tboxTextMailu" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Margin="10,3,0,3" Padding="2,5,4,5" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" SpellCheck.IsEnabled="True" AcceptsReturn="True" TabIndex="9" UndoLimit="1000" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" AcceptsTab="True" FontSize="14" BorderThickness="0" TextAlignment="Justify"/>
             <TextBox x:Name="tboxEventLog" Grid.Column="1" Grid.Row="9" IsReadOnly="True" Grid.ColumnSpan="2" Margin="10,3,0,3" Padding="2,5,4,5" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" ToolTip="Log" Cursor="Arrow" AcceptsReturn="True" TabIndex="12" Background="Black" Foreground="#FF5E95BF" BorderBrush="#FFF2FFFF" BorderThickness="0" />
             <CheckBox x:Name="chckSsl" Content="SSL" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" VerticalContentAlignment="Center" Margin="0,0,25,0" Checked="ChckSsl_CheckedChanged" Unchecked="ChckSsl_CheckedChanged" TabIndex="2" ToolTip="použít zabezpečené připojení" BorderBrush="{x:Null}" Foreground="#FFF2FFFF" Background="#FFF2FFFF" FontSize="12" BorderThickness="1"/>
             <Button x:Name="btnOdeslat" Content="&#xE89C;" Grid.Column="2" Grid.RowSpan="4" Margin="0,3" Click="BtnOdeslat_Click" FontFamily="Segoe MDL2 Assets" TabIndex="10" IsDefault="True" Cursor="Hand" ToolTip="Odeslat e-mail" BorderThickness="1" Foreground="#FF5E95BF" BorderBrush="Black" Background="#FF1E2023" FontSize="60" FontWeight="Bold" />
-            <Button x:Name="btnVymazat" FontFamily="Segoe MDL2 Assets" Content="&#xED60;" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Margin="0,3" Click="BtnVymazat_Click" TabIndex="11" IsCancel="True" Background="#FF1E2023" FontSize="40" Foreground="#FFF2FFFF" BorderThickness="1" ToolTip="Vymazat formulář" BorderBrush="Black" />
+            <Button x:Name="btnVymazat" FontFamily="Segoe MDL2 Assets" Content="&#xED60;" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Margin="0,3" Click="BtnVymazat_Click" TabIndex="11" Background="#FF1E2023" FontSize="40" Foreground="#FFF2FFFF" BorderThickness="1" ToolTip="Vymazat formulář" BorderBrush="Black" />
 
         </Grid>
 

@@ -5,36 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BudizMail"
         mc:Ignorable="d"
-        Title="O aplikaci" Height="325" Width="475" Background="#FF1E2023" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+        Title="O aplikaci" Height="325" Width="475" Background="#FF1E2023" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" PreviewKeyDown="Window_PreviewKeyDown">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Source="/icon_128px.png" StretchDirection="DownOnly" Cursor="Pen" />
+        <Image Source="/icon_128px.png" StretchDirection="DownOnly" Cursor="Pen" RenderTransformOrigin="0.5,0.5" MouseWheel="Image_MouseWheel" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <TextBlock Grid.Column="45" Padding="0" FontSize="15" Foreground="#FFF2FFFF" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Run FontWeight="Bold" FontSize="20" Text="Budiž M@il"/>
+            <Run x:Name="titleNazev" FontWeight="Bold" FontSize="20" Text=""/>
             <LineBreak/>
             <LineBreak/>
             <Run FontWeight="Normal" Text="Verze:"/>
             <LineBreak/>
-            <Run FontWeight="Normal" Text="    0.2.1  |  20.B10"/>
+            <Run x:Name="titleVerze" FontWeight="Normal" Text="    "/>
             <Run FontWeight="Medium" Text="(α)"/>
-            <LineBreak/>
-            <LineBreak/>
-            <Run FontWeight="Normal" Text="Autor:"/>
-            <LineBreak/>
-            <Run FontWeight="Normal" Text="    © 2015–2020  Martin TÁBOR"/>
             <LineBreak/>
             <LineBreak/>
             <Run FontWeight="Normal" Text="Licence:"/>
             <LineBreak/>
-            <Run FontWeight="Normal" Text="    Freeware &amp; Open Source"/>
+            <Run Text="    "/><Image x:Name="imgGithub" Source="/github_32px.png" Height="32" Margin="0,10,0,-9" ToolTip="GitHub"/>
+            <Run FontWeight="Normal" Text="  Freeware &amp; Open-source"/>
             <LineBreak/>
-            <Run FontWeight="Medium" Text="    CC0 1.0 Universal"/>
+            <Run Text="    "/><Image Source="/creative_commons_32px.png" Height="32" Margin="0,15,0,-9" ToolTip="Creative Commons"/>
+            <Run x:Name="titleLicence" FontWeight="Medium" Text="  "/>
             <LineBreak/>
-
+            <LineBreak/>
+            <Run x:Name="titleAutor" FontWeight="Normal" Text="    © 2015"/>
         </TextBlock>
     </Grid>
 </Window>
