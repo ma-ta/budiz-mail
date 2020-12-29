@@ -5,21 +5,21 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
-    <Version>0.2.2</Version>
-    <Authors>© 2020 Martin TÁBOR</Authors>
+    <Version>0.2.3</Version>
+    <Authors>Martin TÁBOR</Authors>
     <Product>Budiž Mail</Product>
     <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
-    <Copyright>© 2020 Martin TÁBOR</Copyright>
+    <Copyright>Martin TÁBOR</Copyright>
     <PackageLicenseExpression>CC BY-SA 4.0</PackageLicenseExpression>
     <PackageProjectUrl>//github.com/ma-ta/budiz-mail</PackageProjectUrl>
     <PackageIcon>icon_256px.png</PackageIcon>
-    <PackageReleaseNotes>2020-11-14
-.NET 5.0
-VS Community 16.8.1</PackageReleaseNotes>
+    <PackageReleaseNotes>.NET SDK 5.0.101
+VS Community 16.8.3</PackageReleaseNotes>
     <NeutralLanguage>cs-CZ</NeutralLanguage>
     <PackageLicenseFile></PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Company>Martin TÁBOR</Company>
   </PropertyGroup>
 
   <ItemGroup>
