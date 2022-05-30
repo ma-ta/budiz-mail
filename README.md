@@ -11,6 +11,7 @@
 
 - [Budiž Mail 0.2 (win-x86)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.4-alpha/BudizMail_v0.2.4_win-x86.exe)
 - [Budiž Mail 0.2 (win-x64)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.4-alpha/BudizMail_v0.2.4_win-x64.exe)
+- [Budiž Mail 0.2 (win-arm64)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.4-alpha/BudizMail_v0.2.4_win-arm64.exe)
 - [Běhové prostředí .NET Runtime 6.0](//dotnet.microsoft.com/download/dotnet/current/runtime)
 
 ### Screenshot:
