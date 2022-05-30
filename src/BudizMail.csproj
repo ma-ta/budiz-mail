@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
-    <Version>0.2.3</Version>
+    <Version>0.2.4</Version>
     <Authors>Martin TÁBOR</Authors>
     <Product>Budiž Mail</Product>
     <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
@@ -13,13 +13,16 @@
     <PackageLicenseExpression>CC BY-SA 4.0</PackageLicenseExpression>
     <PackageProjectUrl>//github.com/ma-ta/budiz-mail</PackageProjectUrl>
     <PackageIcon>icon_256px.png</PackageIcon>
-    <PackageReleaseNotes>.NET SDK 5.0.101
-VS Community 16.8.3</PackageReleaseNotes>
+    <PackageReleaseNotes>.NET SDK 6.0.300
+VS Community 17.2.2</PackageReleaseNotes>
     <NeutralLanguage>cs-CZ</NeutralLanguage>
     <PackageLicenseFile></PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Company>Martin TÁBOR</Company>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <AssemblyVersion></AssemblyVersion>
+    <FileVersion></FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
