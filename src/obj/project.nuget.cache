@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mXIijaxUdRjX6sf7131ReAlJ2XFt1iy8NtyXxvBMd0p76DsHDnkl3z5x1v5xOKTGVUUeOl7YqAR9dXT273zakg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\A\\Documents\\GitHub\\budiz-mail\\src\\BudizMail.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\A\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.27\\microsoft.windows.sdk.net.ref.10.0.22621.27.nupkg.sha512"
+  ],
+  "logs": []
+}

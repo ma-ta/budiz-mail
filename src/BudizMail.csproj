@@ -2,30 +2,31 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
-    <Version>0.2.4</Version>
+    <Version>0.2.5</Version>
     <Authors>Martin TÁBOR</Authors>
     <Product>Budiž Mail</Product>
     <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
     <Copyright>Martin TÁBOR</Copyright>
-    <PackageLicenseExpression>CC BY-SA 4.0</PackageLicenseExpression>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageProjectUrl>//github.com/ma-ta/budiz-mail</PackageProjectUrl>
     <PackageIcon>icon_256px.png</PackageIcon>
-    <PackageReleaseNotes>.NET SDK 6.0.300
-VS Community 17.2.2</PackageReleaseNotes>
+    <PackageReleaseNotes>.NET SDK 7.0.100
+VS Community 17.4.1</PackageReleaseNotes>
     <NeutralLanguage>cs-CZ</NeutralLanguage>
     <PackageLicenseFile></PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Company>Martin TÁBOR</Company>
-    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
     <AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="copyright_32px.png" />
     <None Remove="creative_commons_32px.png" />
     <None Remove="github_32px.png" />
     <None Remove="icon_128px.png" />
@@ -38,6 +39,7 @@ VS Community 17.2.2</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="copyright_32px.png" />
     <Resource Include="creative_commons_32px.png" />
     <Resource Include="github_32px.png" />
     <Resource Include="icon_128px.png" />
