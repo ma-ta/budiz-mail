@@ -13,8 +13,8 @@
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageProjectUrl>//github.com/ma-ta/budiz-mail</PackageProjectUrl>
     <PackageIcon>icon_256px.png</PackageIcon>
-    <PackageReleaseNotes>.NET SDK 7.0.100
-VS Community 17.4.1</PackageReleaseNotes>
+    <PackageReleaseNotes>.NET SDK 7.0.201
+VS Community 17.5.1</PackageReleaseNotes>
     <NeutralLanguage>cs-CZ</NeutralLanguage>
     <PackageLicenseFile></PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
