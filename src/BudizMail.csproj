@@ -12,8 +12,8 @@
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageProjectUrl>//github.com/ma-ta/budiz-mail</PackageProjectUrl>
     <PackageIcon>icon_256px.png</PackageIcon>
-    <PackageReleaseNotes>VS Community 2022 v17.8.2
-.NET SDK 8.0.100</PackageReleaseNotes>
+    <PackageReleaseNotes>VS Community 2022 v17.9.0
+.NET SDK 8.0.200</PackageReleaseNotes>
     <NeutralLanguage>cs-CZ</NeutralLanguage>
     <PackageLicenseFile>
     </PackageLicenseFile>
