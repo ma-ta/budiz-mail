@@ -10,7 +10,7 @@ namespace BudizMail
         public static string NAZEV   = "Budiž Mail";
         public static string AUTOR   = "Martin TÁBOR";
         public static string LICENCE = "GNU GPLv3";
-        public static string VERZE   = "0.2.6  |  23.L03";  // YY.MDD
+        public static string VERZE   = "0.2.5  |  24.B15";  // YY.MDD
         public static string GITHUB  = "github.com/ma-ta/budiz-mail";
     }
 }

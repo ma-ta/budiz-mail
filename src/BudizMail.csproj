@@ -4,7 +4,7 @@
     <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
-    <Version>0.2.6</Version>
+    <Version>0.2.5</Version>
     <Authors>Martin TÁBOR</Authors>
     <Product>Budiž Mail</Product>
     <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
@@ -19,7 +19,7 @@
     </PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Company>Martin TÁBOR</Company>
+    <Company>Ma-TA</Company>
     <AssemblyVersion>
     </AssemblyVersion>
     <FileVersion>
