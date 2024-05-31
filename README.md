@@ -12,7 +12,7 @@
 
 ### Ke stažení:
 
-Budiž M@il v0.2.5 pro platformy:
+Budiž M@il v0.2.6 pro platformy:
 
 - [Windows (x86)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.6/BudizMail-x86.exe)
 - [Windows (x64)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.6/BudizMail-x64.exe)
