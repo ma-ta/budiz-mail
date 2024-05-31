@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Version>0.2.6</Version>
+    <Authors>Martin TÁBOR</Authors>
+    <Product>Budiž Mail</Product>
+    <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
+    <Copyright>Martin TÁBOR</Copyright>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>//github.com/ma-ta/budiz-mail</PackageProjectUrl>
+    <PackageIcon>icon_256px.png</PackageIcon>
+    <PackageReleaseNotes>VS Community 2022 v17.10.1
+.NET SDK 8.0.301</PackageReleaseNotes>
+    <NeutralLanguage>cs-CZ</NeutralLanguage>
+    <PackageLicenseFile>
+    </PackageLicenseFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Company>Ma-TA</Company>
+    <AssemblyVersion>
+    </AssemblyVersion>
+    <FileVersion>
+    </FileVersion>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="copyright_32px.png" />
+    <None Remove="creative_commons_32px.png" />
+    <None Remove="github_32px.png" />
+    <None Remove="icon_128px.png" />
+    <None Remove="zdroje\LICENSE.txt" />
+    <None Remove="zdroje\LICENSE.txt" />
+    <None Include="zdroje\icon_256px.png">
+      <Pack>True</Pack>
+      <PackagePath>
+      </PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="copyright_32px.png" />
+    <Resource Include="creative_commons_32px.png" />
+    <Resource Include="github_32px.png" />
+    <Resource Include="icon_128px.png" />
+  </ItemGroup>
+</Project>
