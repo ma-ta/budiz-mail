@@ -21,4 +21,4 @@ Budiž M@il v1.0.0 pro platformy:
 
 ### Screenshot:
 
-![Screenshot aplikace Budiž Mail v1.0.0](/budiz_mail_0.2-win11.png)
+![Screenshot aplikace Budiž Mail v1.0.0](/budiz_mail_1.0-win11.png)
