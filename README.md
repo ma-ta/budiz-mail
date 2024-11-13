@@ -6,19 +6,19 @@
 
 ### Použité technologie:
 
-- VS Community 2022 v17.10.1,
-- .NET SDK 8.0.301,
+- VS Community 2022 v17.12.0,
+- .NET SDK 9.0.100,
 - WPF
 
 ### Ke stažení:
 
-Budiž M@il v0.2.6 pro platformy:
+Budiž M@il v1.0.0 pro platformy:
 
-- [Windows (x86)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.6/BudizMail-x86.exe)
-- [Windows (x64)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.6/BudizMail-x64.exe)
-- [Windows (arm64)](//github.com/ma-ta/budiz-mail/releases/download/v0.2.6/BudizMail-arm64.exe)
+- [Windows (x86)](//github.com/ma-ta/budiz-mail/releases/download/v1.0.0/BudizMail-x86.exe)
+- [Windows (x64)](//github.com/ma-ta/budiz-mail/releases/download/v1.0.0/BudizMail-x64.exe)
+- [Windows (arm64)](//github.com/ma-ta/budiz-mail/releases/download/v1.0.0/BudizMail-arm64.exe)
 - [Běhové prostředí .NET](//dotnet.microsoft.com/download/dotnet/current/runtime)
 
 ### Screenshot:
 
-![Screenshot aplikace Budiž Mail v0.2.x](/budiz_mail_0.2-win11.png)
+![Screenshot aplikace Budiž Mail v1.0.0](/budiz_mail_0.2-win11.png)
