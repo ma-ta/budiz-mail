@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BudizMail"
         mc:Ignorable="d"
-        Title="O aplikaci" Height="325" Width="475" Background="#FF1E2023" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" PreviewKeyDown="Window_PreviewKeyDown">
+        Title="O aplikaci" Height="350" Width="475" Background="#FF1E2023" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" PreviewKeyDown="Window_PreviewKeyDown">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -29,6 +29,9 @@
             <Run FontWeight="Normal" Text="Verze:"/>
             <LineBreak/>
             <Run x:Name="titleVerze" FontWeight="Normal" Text="    "/>
+            <Run FontWeight="Medium" Text=""/>
+            <LineBreak/>
+            <Run x:Name="titleArch" FontWeight="Normal" Text="    "/>
             <Run FontWeight="Medium" Text=""/>
             <LineBreak/>
             <LineBreak/>

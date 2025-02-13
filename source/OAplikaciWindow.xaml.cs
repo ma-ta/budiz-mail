@@ -17,6 +17,7 @@ namespace BudizMail
 
             titleNazev.Text = "Budiž M@il";
             titleVerze.Text += App.VERZE;
+            titleArch.Text += App.DOTNET_INFO + " (" + App.ARCH_INFO + ")";
             imgGithub.ToolTip += " – " + App.GITHUB;
             titleLicence.Text += App.LICENCE;
             titleAutor.Text += String.Format("–{0}  {1}", DateTime.Now.Year, App.AUTOR);
