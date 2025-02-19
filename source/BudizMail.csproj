@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Title>Budiž Mail</Title>
+    <NeutralLanguage>cs-CZ</NeutralLanguage>
+    <PackageIcon>icon_128px.png</PackageIcon>
+    <Copyright>GPL-3.0-or-later</Copyright>
+    <Authors>Martin TÁBOR</Authors>
+    <RepositoryUrl>https://github.com/ma-ta/budiz-mail</RepositoryUrl>
+    <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="copyright_32px.png" />
+    <None Remove="creative_commons_32px.png" />
+    <None Remove="github_32px.png" />
+    <None Remove="icon_128px.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="copyright_32px.png" />
+    <Resource Include="creative_commons_32px.png" />
+    <Resource Include="github_32px.png" />
+    <Resource Include="icon_128px.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
+  </ItemGroup>
+
+</Project>

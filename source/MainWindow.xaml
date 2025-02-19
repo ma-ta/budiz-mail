@@ -1,0 +1,88 @@
+﻿<Window x:Class="BudizMail.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudizMail"
+        mc:Ignorable="d"
+        Height="750" Width="1000" WindowStartupLocation="CenterScreen"
+        MinWidth="800" MinHeight="600" ResizeMode="CanResizeWithGrip"
+        BorderThickness="0" Background="#FF35393D">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+            <Menu Height="22" Background="#FF1E2023" IsMainMenu="True">
+                <MenuItem Header="_Soubor" Foreground="#FFF2FFFF" MinHeight="22">
+                    <MenuItem Foreground="Black" Header="_Vložit ze souboru" Click="NacistTxt_Click" ToolTip="Načte text ze souboru .txt (UTF-8)" Background="{x:Null}">
+                        <MenuItem.Icon>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE70F;" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Ukončit" Foreground="Black" Click="Konec" ToolTip="Ukončí aplikaci" Background="{x:Null}">
+                        <MenuItem.Icon>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE7E8;" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Nápověda" Foreground="#FFF2FFFF">
+                    <MenuItem x:Name="MenuItem_OAplikaci" Foreground="Black" Header="_O aplikaci" Click="OAplikaci" IsEnabled="True">
+                        <MenuItem.Icon>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE82F;" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <Grid Margin="15" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Content="SMTP Server *" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" ToolTip="povinné pole" Foreground="#FFF2FFFF" FontWeight="Bold"/>
+            <Label Content="Port *" Grid.Row="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" ToolTip="povinné pole" Foreground="#FFF2FFFF" FontWeight="Bold"/>
+            <Label Content="Uživatel" Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" Foreground="#FFF2FFFF"/>
+            <Label Content="Heslo" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" Foreground="#FFF2FFFF"/>
+            <Label Content="Jméno odesílatele" Grid.Row="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" Foreground="#FFF2FFFF"/>
+            <Label Content="Adresa odesílatele *" Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" ToolTip="povinné pole" Foreground="#FFF2FFFF" FontWeight="Bold"/>
+            <Label Content="Adresa příjemce *" Grid.Row="6" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" ToolTip="povinné pole" Foreground="#FFF2FFFF" FontWeight="Bold"/>
+            <Label Content="Předmět" Grid.Row="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,0,0,0" Foreground="#FFF2FFFF"/>
+            <Label Content="Text zprávy" Grid.Row="8" HorizontalContentAlignment="Right" Margin="0,5" Padding="5,5,0,5" Foreground="#FFF2FFFF"/>
+            <TextBox x:Name="tboxSmtpServer" Grid.Column="1" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="0" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <TextBox x:Name="tboxPort" Text="25" Grid.Column="1" Grid.Row="1" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,65,0" TabIndex="1" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <TextBox x:Name="tboxUzivatel" Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="3" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <PasswordBox x:Name="tboxHeslo" Grid.Column="1" Grid.Row="3" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="4" PasswordChar="*" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <TextBox x:Name="tboxJmenoOd" Grid.Column="1" Grid.Row="4" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="5" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <TextBox x:Name="tboxOd" Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="6" Text="@" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <TextBox x:Name="tboxKomu" Grid.Column="1" Grid.Row="6" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="7" Text="@" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <TextBox x:Name="tboxPredmet" Grid.Column="1" Grid.Row="7" VerticalContentAlignment="Center" Margin="10,3" Padding="2,0,4,0" TabIndex="8" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" FontSize="12" BorderThickness="1"/>
+            <TextBox x:Name="tboxTextMailu" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="2" Margin="10,3,0,3" Padding="2,5,4,5" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" SpellCheck.IsEnabled="True" AcceptsReturn="True" TabIndex="9" UndoLimit="1000" Background="#FF17191C" Foreground="#FFF2FFFF" BorderBrush="Black" AcceptsTab="True" FontSize="14" BorderThickness="0" TextAlignment="Justify"/>
+            <TextBox x:Name="tboxEventLog" Grid.Column="1" Grid.Row="9" IsReadOnly="True" Grid.ColumnSpan="2" Margin="10,3,0,3" Padding="2,5,4,5" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" ToolTip="Log" Cursor="Arrow" AcceptsReturn="True" TabIndex="12" Background="Black" Foreground="#FF5E95BF" BorderBrush="#FFF2FFFF" BorderThickness="0" />
+            <CheckBox x:Name="chckSsl" Content="SSL" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" VerticalContentAlignment="Center" Margin="0,0,25,0" Checked="ChckSsl_CheckedChanged" Unchecked="ChckSsl_CheckedChanged" TabIndex="2" ToolTip="použít zabezpečené připojení" BorderBrush="{x:Null}" Foreground="#FFF2FFFF" Background="#FFF2FFFF" FontSize="12" BorderThickness="1"/>
+            <Button x:Name="btnOdeslat" Content="&#xE89C;" Grid.Column="2" Grid.RowSpan="4" Margin="0,3" Click="BtnOdeslat_Click" FontFamily="Segoe MDL2 Assets" TabIndex="10" IsDefault="True" Cursor="Hand" ToolTip="Odeslat e-mail" BorderThickness="1" Foreground="#FF5E95BF" BorderBrush="Black" Background="#FF1E2023" FontSize="60" FontWeight="Bold" />
+            <Button x:Name="btnVymazat" FontFamily="Segoe MDL2 Assets" Content="&#xED60;" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Margin="0,3" Click="BtnVymazat_Click" TabIndex="11" Background="#FF1E2023" FontSize="40" Foreground="#FFF2FFFF" BorderThickness="1" ToolTip="Vymazat formulář" BorderBrush="Black" />
+
+        </Grid>
+
+    </Grid>
+</Window>
