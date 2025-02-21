@@ -15,6 +15,11 @@
     <Authors>Martin TÁBOR</Authors>
     <RepositoryUrl>https://github.com/ma-ta/budiz-mail</RepositoryUrl>
     <Description>Jednoduché odeslání e-mailu s ručním nastavením parametrů</Description>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Version>$(PackageVersion)</Version>
+    <AssemblyVersion>$(PackageVersion)</AssemblyVersion>
+    <FileVersion>$(PackageVersion)</FileVersion>
+    <InformationalVersion>$(PackageVersion)</InformationalVersion>
   </PropertyGroup>
 
   <ItemGroup>
