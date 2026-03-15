@@ -6,10 +6,10 @@
 
 ### Použité technologie:
 
-**Vyžaduje [.NET 10.0 (LTS)](//dotnet.microsoft.com/en-us/download)**
-- VS Community 2026 v18.2.1,
-- .NET SDK 10.0.102,
-- Windows SDK 10.0.26100.7627,
+**Vyžaduje [.NET SDK 10.0 (LTS)](//dotnet.microsoft.com/en-us/download)**
+- VS Community 2026 v18.4.0,
+- .NET SDK 10.0.200,
+- Windows SDK 10.0.26100.7705,
 - WPF
 
 ### Ke stažení:
@@ -23,4 +23,4 @@ Budiž M@il v1.0.0 pro platformy:
 
 ### Screenshot:
 
-![Screenshot aplikace Budiž Mail v1.0.x](/budiz-mail_1.0.png)
+![Screenshot aplikace Budiž Mail v1.0.X](/budiz-mail_v1.0.png)
