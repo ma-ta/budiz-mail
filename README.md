@@ -1,18 +1,20 @@
 # Budiž M@il
 > Jednoduché odeslání e-mailu s ručním nastavením parametrů
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ma-ta/budiz-mail?include_prereleases)
-![GitHub](https://img.shields.io/github/license/ma-ta/budiz-mail)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ma-ta/serio?include_prereleases)
+![GitHub](https://img.shields.io/github/license/ma-ta/serio)
 
 ### Použité technologie:
 
 **Vyžaduje [.NET SDK 10.0 (LTS)](//dotnet.microsoft.com/en-us/download)**
-- VS Community 2026 v18.4.0,
-- .NET SDK 10.0.200,
-- Windows SDK 10.0.26100.7705,
+- VS Community 2026 v18.5.0,
+- .NET SDK 10.0.202,
+- Windows SDK 10.0.28000.1721,
 - WPF
 
 ### Ke stažení:
+
+> Vyžaduje Windows 11+ (verze 24H2, build 26100)
 
 Budiž M@il v1.0.0 pro platformy:
 
