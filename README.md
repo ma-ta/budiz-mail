@@ -6,9 +6,9 @@
 
 ### Použité technologie:
 
-**Vyžaduje [.NET SDK 10.0 (LTS)](//dotnet.microsoft.com/en-us/download)**
-- VS Community 2026 v18.5.2,
-- .NET SDK 10.0.203,
+**Vyžaduje [.NET SDK 10.0 (LTS)](//dotnet.microsoft.com/en-us/download/dotnet/10.0)**
+- VS Community 2026 v18.6.0,
+- .NET SDK 10.0.300,
 - WPF
 
 ### Ke stažení:
@@ -20,7 +20,7 @@ Budiž M@il v1.0.0 pro platformy:
 - [Windows (x86)](//github.com/ma-ta/budiz-mail/releases/download/v1.0.0/BudizMail-x86.exe)
 - [Windows (x64)](//github.com/ma-ta/budiz-mail/releases/download/v1.0.0/BudizMail-x64.exe)
 - [Windows (arm64)](//github.com/ma-ta/budiz-mail/releases/download/v1.0.0/BudizMail-arm64.exe)
-- [Běhové prostředí .NET](//dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime)
+- [Běhové prostředí .NET](//dotnet.microsoft.com/en-us/download/dotnet/10.0/runtime)
 
 ### Screenshot:
 
