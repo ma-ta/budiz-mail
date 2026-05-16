@@ -1,8 +1,8 @@
 # Budiž M@il
 > Jednoduché odeslání e-mailu s ručním nastavením parametrů
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ma-ta/serio?include_prereleases)
-![GitHub](https://img.shields.io/github/license/ma-ta/serio)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ma-ta/budiz-mail?include_prereleases)
+![GitHub](https://img.shields.io/github/license/ma-ta/budiz-mail)
 
 ### Použité technologie:
 
